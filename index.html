@@ -1,39 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <title> Home </title>
-    
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card{
+            background-color: #66ccff;
+            height: 170px;
+            width: 200px;
+            text-align: center;
+            padding-top: 50px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .title{
+            margin-top: 40px;
+        }
+        .card:hover{
+            box-shadow: -5px 5px 14px 2px #66ccff;
+            background-color: #ffff99;
+        }
+
+    </style>
+
 </head>
 <body>
     <h1>This is home page</h1>
 
     <img src="./img/home.png " height="50px">
 
-</br> </br>
-<P>This is About My Accounts</P>
-    <a href="about.html">
-      <img src="./img/info.png" height="50px">
-    </a>
+    <div class="container">
+        <div class="card">
+            <a href="about.html">
+                <img src="./img/info.png" height="80px">
+            </a>
+            <h2 class="title">My Accounts</h2>
+        </div>
 
-</br> </br>
-<p>This is About My Hobbies</p>
-<a href="hobbies.html">
-    <img src="./img/mental-health.png" height="50px">
-</a>
+        <div class="card">
+            <a href="hobbies.html">
+                <img src="./img/mental-health.png" height="80px">
+            </a>
+            <h2 class="title">My Hobbies</h2>
+        </div>
 
-</br> </br>
-<p>This is About My contact</p>
-<a href="contact.html">
-    <img src="./img/phone-call.png" height="50px">
-</a>
+        <div class="card">
+            <a href="contact.html">
+                <img src="./img/phone-call.png" height="80px">
+            </a>
+            <h2 class="title">My contact</h2>
+        </div>
 
-</br> </br>
-<p>This is About My City</p>
-<a href="city_info.html">
-    <img src="./img/city.png" height="50px">
-</a>
-
+        <div class="card">
+            <a href="city_info.html">
+                <img src="./img/city.png" height="80px">
+            </a>
+            <h2 class="title">  My City</h2>
+        </div>
+    </div>
 
 </body>
+
 </html>
